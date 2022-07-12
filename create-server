@@ -83,7 +83,7 @@ openssl ca -batch -notext \
            -config conf/ca.conf \
            -in csr/${SAFE_NAME}.server.csr \
            -out certs/${SAFE_NAME}.server.crt \
-           -days 730 \
+           -days 3652 \
            -extensions server_ext \
            -passin env:CA_PASS
 
